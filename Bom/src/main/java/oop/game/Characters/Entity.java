@@ -14,7 +14,7 @@ public abstract class Entity {
     protected Image img;
     protected Sprite sprite;
 
-    protected int speed = 10;
+    protected int speed ;
 
     public Entity() {
 
@@ -47,6 +47,14 @@ public abstract class Entity {
 
     public void setImg(Image img) {
         this.img = img;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public void render(GraphicsContext gc) {

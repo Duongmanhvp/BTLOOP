@@ -26,6 +26,7 @@ public class Bomber extends Entity {
     private KeyCode Key;
     public Bomber(int x, int y, Image img) {
         super(x, y, img);
+        setSpeed(10);
     }
 
     public void update () {
@@ -48,7 +49,12 @@ public class Bomber extends Entity {
         if (hasBomb) {
             Bomb.setBomb();
         }
-        animate++;
+        if(animate++ < 100){
+            MoveBomber();
+        }
+        else {
+            animate = 0;
+        }
     }
 
     public void isUp() {

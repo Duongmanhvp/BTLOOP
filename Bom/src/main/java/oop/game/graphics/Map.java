@@ -58,7 +58,7 @@ public class Map {
                                 bomberman = new Bomber(j, i, Sprite.player_right.getFxImage());
                                 entities.add(bomberman);
                                 break;
-                            /*case "1":
+                            case "1":
                                 ett = new Grass(j, i, Sprite.grass.getFxImage());
                                 idMap[i][j] = "+";
                                 Entity balloom = new Balloom(j, i, Sprite.balloom_left1.getFxImage());
@@ -69,7 +69,7 @@ public class Map {
                                 idMap[i][j] = "+";
                                 Entity oneal = new Oneal(j, i, Sprite.oneal_left1.getFxImage());
                                 entities.add(oneal);
-                                break;*/
+                                break;
                             default:
                                 ett = new Grass(j, i, Sprite.grass.getFxImage());
                                 idMap[i][j] = "+";
